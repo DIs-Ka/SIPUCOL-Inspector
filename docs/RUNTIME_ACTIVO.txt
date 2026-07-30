@@ -1,0 +1,4 @@
+﻿INSPECTOR SIPUCOL - RUNTIME ACTIVO
+Fecha: 2026-07-30 11:43:04
+Proyecto: C:\Users\Admin\Projects\Inspector-Sipucol\app
+Motor esperado: backend.pdf_clean_final_override
