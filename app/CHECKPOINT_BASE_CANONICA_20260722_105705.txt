@@ -1,0 +1,18 @@
+SIPUCOL — BASE CANÓNICA
+========================================================================
+
+Fecha: 2026-07-22 10:58:45
+
+Regla de desarrollo:
+Todos los cambios futuros deben realizarse sobre esta versión.
+No restaurar ni reutilizar código antiguo.
+Crear backup antes de cada modificación.
+
+Cambio nuevo:
+Botón Limpiar todo añadido sin modificar la funcionalidad existente.
+
+Backup anterior:
+C:\Users\Admin\OneDrive\Documentos\Zenith\2. Proyectos\2. SIPUCOL Autom\sipucol-inspector\backups\SIPUCOL_BASE_CANONICA_ANTES_BOTON_LIMPIAR_20260722_105705.zip
+
+Backup final:
+C:\Users\Admin\OneDrive\Documentos\Zenith\2. Proyectos\2. SIPUCOL Autom\sipucol-inspector\backups\SIPUCOL_BASE_CANONICA_CON_BOTON_LIMPIAR_20260722_105705.zip

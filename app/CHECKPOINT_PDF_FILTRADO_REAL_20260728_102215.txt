@@ -1,0 +1,26 @@
+SIPUCOL — BASE CANÓNICA
+========================================================================
+
+Fecha: 2026-07-28 10:22:36
+
+Motor activo:
+backend.pdf_filtered_libreoffice_worker
+
+Flujo:
+1. Analizar Excel seleccionado.
+2. Detectar componentes diligenciados.
+3. Crear copia temporal filtrada.
+4. Ocultar Índice.
+5. Ocultar anexos.
+6. Ocultar Evaluación.
+7. Ocultar componentes vacíos.
+8. Mantener CALCULO IC.
+9. Usar motor LibreOffice estable.
+
+El Excel original no se modifica.
+
+Backup anterior:
+C:\Users\Admin\OneDrive\Documentos\Zenith\2. Proyectos\2. SIPUCOL Autom\sipucol-inspector\backups\SIPUCOL_BASE_CANONICA_ANTES_FILTRO_PDF_REAL_20260728_102215.zip
+
+Backup final:
+C:\Users\Admin\OneDrive\Documentos\Zenith\2. Proyectos\2. SIPUCOL Autom\sipucol-inspector\backups\SIPUCOL_BASE_CANONICA_PDF_FILTRADO_REAL_20260728_102215.zip

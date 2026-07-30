@@ -1,0 +1,14 @@
+{
+  "product": "Inspector Sipucol",
+  "block": 0,
+  "blockName": "Blindaje y copia independiente",
+  "status": "completed",
+  "completedAt": "2026-07-30T11:38:25",
+  "projectRoot": "C:\\Users\\Admin\\Projects\\Inspector-Sipucol",
+  "appRoot": "C:\\Users\\Admin\\Projects\\Inspector-Sipucol\\app",
+  "officialSource": "C:\\Users\\Admin\\OneDrive\\Documentos\\Zenith\\2. Proyectos\\2. SIPUCOL Autom\\sipucol-inspector",
+  "activePdfModule": "backend.pdf_clean_final_override",
+  "git": "DISPONIBLE",
+  "nextBlock": 1,
+  "nextBlockName": "Interfaz responsive"
+}

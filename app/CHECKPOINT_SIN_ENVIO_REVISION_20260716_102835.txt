@@ -1,0 +1,22 @@
+SIPUCOL - CHECKPOINT SIN ENVÍO A EVALUACIÓN
+========================================================================
+
+Fecha: 2026-07-16 10:29:43
+
+Bloque visual eliminado:
+src\components\PanelFotos.jsx
+
+Flujo interno neutralizado:
+No había props activas adicionales.
+
+Backend:
+No existía un endpoint backend para este flujo. Era lógica interna del frontend React.
+
+Validación:
+npm run build completado correctamente.
+
+Backup anterior:
+C:\Users\Admin\OneDrive\Documentos\Zenith\2. Proyectos\2. SIPUCOL Autom\sipucol-inspector\backups\SIPUCOL_VERSION_PERFECTA_ANTES_DE_QUITAR_ENVIO_REVISION_20260716_102835.zip
+
+Backup final:
+C:\Users\Admin\OneDrive\Documentos\Zenith\2. Proyectos\2. SIPUCOL Autom\sipucol-inspector\backups\SIPUCOL_VERSION_PERFECTA_SIN_ENVIO_REVISION_20260716_102835.zip

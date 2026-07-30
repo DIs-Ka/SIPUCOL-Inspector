@@ -1,0 +1,13 @@
+CHECKPOINT SIPUCOL
+
+Fecha:
+2026-07-09 16:05:10
+
+Antes de:
+- Optimizar scripts visuales.
+- Limitar ID Puente a 12 digitos reales.
+- Reparar Excel seleccionado -> PDF.
+- Eliminar observers antiguos acumulados.
+
+Backup:
+C:\Users\Admin\OneDrive\Documentos\Zenith\2. Proyectos\2. SIPUCOL Autom\sipucol-inspector\backups\SIPUCOL_CHECKPOINT_ANTES_REPARACION_ID_PDF_UI_20260709_160503.zip

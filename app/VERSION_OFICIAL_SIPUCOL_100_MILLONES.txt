@@ -1,0 +1,48 @@
+SIPUCOL INSPECTOR — VERSIÓN OFICIAL 100 MILLONES
+============================================================================
+
+Fecha de oficialización: 2026-07-30 10:38:00
+
+ESTADO:
+VERSIÓN OFICIAL, APROBADA Y CANÓNICA.
+
+Todos los cambios futuros deben realizarse únicamente
+sobre esta versión, con backup previo y sin reutilizar
+código antiguo.
+
+FUNCIONALIDAD CONFIRMADA:
+- Módulo Fotos funcional.
+- Selector de tamaño de miniaturas funcional.
+- Buscador de fotos funcional.
+- Flujo antiguo Fotos → Evaluación eliminado.
+- Botón Limpiar todo funcional.
+- Selectores de fecha y hora persistentes.
+- Identificación e ID del puente funcionales.
+- ID carretera y tramo alineado a la derecha en Excel.
+- Guardar y cargar proyecto funcional.
+- Autoguardado funcional.
+- Exportación Excel funcional.
+- Motor PDF basado en LibreOffice funcional.
+- PDF imprime únicamente componentes diligenciados.
+- Componentes con contador cero quedan excluidos.
+- Índice inicial y catálogo excluidos del PDF.
+- CALCULO IC incluido una sola vez y sin cortes artificiales.
+- Interfaz, Evaluación y Códigos preservados.
+
+MOTOR PDF OFICIAL:
+backend.pdf_clean_final_override
+
+ARCHIVO OFICIAL:
+C:\Users\Admin\OneDrive\Documentos\Zenith\2. Proyectos\2. SIPUCOL Autom\sipucol-inspector\backups\SIPUCOL_OFICIAL_100_MILLONES_20260730_103751.zip
+
+Tamaño del ZIP: 140.69 MB
+Archivos incluidos: 545
+
+SHA-256:
+0ee58b8282923ae84a3b3d9600aa96e48e1b7bc56905e389cb529b156b1effa7
+
+REGLA DE DESARROLLO:
+No restaurar backups antiguos sobre esta base.
+No reactivar parches o workers anteriores.
+No modificar una función estable al implementar otra.
+Todo cambio nuevo requiere backup previo.

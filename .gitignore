@@ -1,0 +1,15 @@
+app/node_modules/
+app/dist/
+**/__pycache__/
+*.pyc
+.venv/
+venv/
+**/.vite/
+.sipucol_runtime/
+backups/
+*.log
+*.tmp
+.env
+.env.local
+Thumbs.db
+desktop.ini

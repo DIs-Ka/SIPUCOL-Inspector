@@ -1,0 +1,13 @@
+CHECKPOINT SIPUCOL
+Fecha: 2026-07-09 10:21:51
+
+Estado conservado:
+- Exportador Excel actual intacto.
+- Tracker actual intacto.
+- Mapeo de observaciones actual intacto.
+- Módulo Fotos intacto.
+- No se modifica la lógica de evaluación.
+- Se añadirá únicamente control de persistencia.
+
+Backup:
+C:\Users\Admin\OneDrive\Documentos\Zenith\2. Proyectos\2. SIPUCOL Autom\sipucol-inspector\backups\SIPUCOL_CHECKPOINT_ANTES_MODO_INICIO_20260709_102145.zip

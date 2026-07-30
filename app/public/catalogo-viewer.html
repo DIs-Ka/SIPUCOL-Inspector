@@ -1,0 +1,175 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ficha catálogo SIPUCOL</title>
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #050300;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      height: 52px;
+      background: #0f0a00;
+      border-bottom: 1px solid #78350f;
+      color: #fde68a;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 14px;
+      box-sizing: border-box;
+    }
+
+    .titulo {
+      min-width: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-weight: bold;
+      color: #fbbf24;
+    }
+
+    .controles {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    button {
+      background: #120c00;
+      color: #fcd34d;
+      border: 1px solid #78350f;
+      border-radius: 7px;
+      padding: 7px 10px;
+      cursor: pointer;
+    }
+
+    button:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+
+    #zona {
+      height: calc(100% - 52px);
+      overflow: auto;
+      background: #050300;
+      padding: 18px;
+      box-sizing: border-box;
+    }
+
+    #canvas {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      background: white;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div id="titulo" class="titulo">Ficha catálogo SIPUCOL</div>
+
+    <div class="controles">
+      <button id="menos">-</button>
+      <button id="reset">100%</button>
+      <button id="mas">+</button>
+      <button onclick="window.close()">Cerrar</button>
+    </div>
+  </header>
+
+  <main id="zona">
+    <div id="canvas">
+      <img id="imagen" alt="Ficha catálogo SIPUCOL" />
+    </div>
+  </main>
+
+  <script>
+    const params = new URLSearchParams(window.location.search)
+
+    const img = params.get('img')
+    const codigo = params.get('codigo') || 'Código'
+    const pagina = params.get('page') || ''
+
+    const ZOOM_MIN = 0.75
+    const ZOOM_MAX = 3
+    const ZOOM_STEP = 0.25
+
+    let zoom = 1
+
+    const titulo = document.getElementById('titulo')
+    const zona = document.getElementById('zona')
+    const canvas = document.getElementById('canvas')
+    const imagen = document.getElementById('imagen')
+    const menos = document.getElementById('menos')
+    const mas = document.getElementById('mas')
+    const reset = document.getElementById('reset')
+
+    titulo.textContent = `${codigo} · Página ${pagina}`
+    imagen.src = img
+
+    function pintarZoom() {
+      canvas.style.width = `${zoom * 100}%`
+      reset.textContent = `${Math.round(zoom * 100)}%`
+
+      menos.disabled = zoom <= ZOOM_MIN
+      mas.disabled = zoom >= ZOOM_MAX
+
+      requestAnimationFrame(() => {
+        const maxScrollX = Math.max(0, zona.scrollWidth - zona.clientWidth)
+        zona.scrollLeft = maxScrollX / 2
+      })
+    }
+
+    function acercar() {
+      zoom = Math.min(ZOOM_MAX, Number((zoom + ZOOM_STEP).toFixed(2)))
+      pintarZoom()
+    }
+
+    function alejar() {
+      zoom = Math.max(ZOOM_MIN, Number((zoom - ZOOM_STEP).toFixed(2)))
+      pintarZoom()
+    }
+
+    function resetear() {
+      zoom = 1
+      pintarZoom()
+    }
+
+    zona.addEventListener('wheel', (event) => {
+      if (!event.ctrlKey) return
+
+      event.preventDefault()
+
+      if (event.deltaY < 0) {
+        acercar()
+      } else {
+        alejar()
+      }
+    }, { passive: false })
+
+    menos.addEventListener('click', alejar)
+    mas.addEventListener('click', acercar)
+    reset.addEventListener('click', resetear)
+
+    pintarZoom()
+  </script>
+</body>
+</html>

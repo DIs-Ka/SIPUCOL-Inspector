@@ -1,0 +1,23 @@
+CHECKPOINT SIPUCOL
+
+Fecha:
+2026-07-09 15:25:54
+
+Estado guardado antes de cambiar Guardar PDF.
+
+Se conserva:
+- Exportador Excel.
+- Tracker de celdas.
+- Guardar proyecto.
+- Cargar proyecto.
+- Autoguardado.
+- Módulo Fotos.
+- UI actual.
+- Backend actual.
+
+Nueva lógica:
+Guardar PDF elegirá un Excel existente
+y Microsoft Excel lo convertirá directamente.
+
+Backup:
+C:\Users\Admin\OneDrive\Documentos\Zenith\2. Proyectos\2. SIPUCOL Autom\sipucol-inspector\backups\SIPUCOL_CHECKPOINT_ANTES_PDF_DESDE_EXCEL_20260709_152546.zip

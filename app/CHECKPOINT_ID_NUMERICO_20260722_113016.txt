@@ -1,0 +1,13 @@
+SIPUCOL — BASE CANÓNICA
+========================================================================
+
+Fecha: 2026-07-22 11:30:56
+
+Cambio implementado:
+ID Puente acepta únicamente números y un máximo de 2 dígitos.
+
+Backup anterior:
+C:\Users\Admin\OneDrive\Documentos\Zenith\2. Proyectos\2. SIPUCOL Autom\sipucol-inspector\backups\SIPUCOL_BASE_CANONICA_ANTES_ID_NUMERICO_20260722_113016.zip
+
+Backup final:
+C:\Users\Admin\OneDrive\Documentos\Zenith\2. Proyectos\2. SIPUCOL Autom\sipucol-inspector\backups\SIPUCOL_BASE_CANONICA_ID_SOLO_NUMEROS_20260722_113016.zip

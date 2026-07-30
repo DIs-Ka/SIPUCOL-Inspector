@@ -1,0 +1,69 @@
+﻿html,
+body,
+#root {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+/* SIPUCOL CUSTOM SCROLLBARS */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(59, 130, 246, 0.75) rgba(2, 6, 23, 0.55);
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(2, 6, 23, 0.55);
+  border-radius: 999px;
+  margin: 3px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    rgba(96, 165, 250, 0.95),
+    rgba(29, 78, 216, 0.85)
+  );
+  border-radius: 999px;
+  border: 2px solid rgba(2, 6, 23, 0.85);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(147, 197, 253, 1),
+    rgba(37, 99, 235, 0.95)
+  );
+}
+
+*::-webkit-scrollbar-corner {
+  background: rgba(2, 6, 23, 0.75);
+}
+
+/* Scrollbars horizontales más suaves para tablas y carruseles */
+div[style*="overflow-x"],
+div[style*="overflow: auto"],
+div[style*="overflow-y"] {
+  scrollbar-gutter: stable;
+}
+
+/* Evita que las barras blancas nativas rompan la estética */
+html,
+body {
+  scrollbar-color: rgba(59, 130, 246, 0.75) rgba(2, 6, 23, 0.65);
+}

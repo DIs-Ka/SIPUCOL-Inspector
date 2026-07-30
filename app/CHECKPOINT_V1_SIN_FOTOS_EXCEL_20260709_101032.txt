@@ -1,0 +1,15 @@
+CHECKPOINT SIPUCOL V1 - SIN FOTOS EN EXCEL
+Fecha: 2026-07-09 10:11:15
+
+Estado:
+- Excel exporta solo datos.
+- No se insertan imágenes físicas en Excel.
+- No se crea hoja Evaluación.
+- Módulo Fotos se conserva como apoyo visual para evaluar daños.
+- Se desactiva envío de fotos a Evaluación/Excel.
+- Export mantiene tracker de celdas exactas.
+- Cada export genera reporte TXT + JSON.
+- Se añade validación post-export: la app escribe celdas y luego las lee para confirmar.
+
+Backup ZIP:
+C:\Users\Admin\OneDrive\Documentos\Zenith\2. Proyectos\2. SIPUCOL Autom\sipucol-inspector\backups\SIPUCOL_CHECKPOINT_V1_SIN_FOTOS_EXCEL_20260709_101032.zip

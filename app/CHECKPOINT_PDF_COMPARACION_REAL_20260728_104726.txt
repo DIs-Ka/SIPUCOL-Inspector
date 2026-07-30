@@ -1,0 +1,20 @@
+SIPUCOL — NUEVA BASE CANÓNICA
+========================================================================
+
+Fecha: 2026-07-28 10:47:44
+
+Filtro PDF definitivo:
+- Compara Excel contra plantilla original.
+- Identificación nunca cuenta.
+- Fórmulas no cuentan.
+- Formatos y celdas grises no cuentan.
+- Solo severidades, fotos, ubicación y observaciones.
+- Índice oculto.
+- Evaluación y anexos ocultos.
+- CALCULO IC conservado.
+
+Backup anterior:
+C:\Users\Admin\OneDrive\Documentos\Zenith\2. Proyectos\2. SIPUCOL Autom\sipucol-inspector\backups\SIPUCOL_BASE_CANONICA_ANTES_COMPARACION_REAL_PDF_20260728_104726.zip
+
+Backup final:
+C:\Users\Admin\OneDrive\Documentos\Zenith\2. Proyectos\2. SIPUCOL Autom\sipucol-inspector\backups\SIPUCOL_BASE_CANONICA_PDF_COMPARACION_REAL_20260728_104726.zip

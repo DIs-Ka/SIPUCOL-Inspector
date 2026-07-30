@@ -1,0 +1,30 @@
+SIPUCOL — NUEVA BASE CANÓNICA
+========================================================================
+
+Fecha: 2026-07-28 10:32:07
+
+Corrección:
+- sheets_touched ya no decide qué tablas imprimir.
+- Solo cuentan acciones write reales.
+- Limpiezas de severidad no cuentan.
+- Observaciones no vacías sí cuentan.
+- Componentes completamente vacíos se ocultan.
+- Índice permanece oculto.
+- CALCULO IC permanece al final.
+
+No modificado:
+- Motor LibreOffice estable.
+- Maquetación PDF.
+- Exportador Excel.
+- Excel original.
+- Frontend.
+- Fotos.
+- Evaluación.
+- Códigos.
+- Autoguardado.
+
+Backup anterior:
+C:\Users\Admin\OneDrive\Documentos\Zenith\2. Proyectos\2. SIPUCOL Autom\sipucol-inspector\backups\SIPUCOL_BASE_CANONICA_ANTES_CORREGIR_COMPONENTES_PDF_20260728_103151.zip
+
+Backup final:
+C:\Users\Admin\OneDrive\Documentos\Zenith\2. Proyectos\2. SIPUCOL Autom\sipucol-inspector\backups\SIPUCOL_BASE_CANONICA_PDF_SOLO_ESCRITURAS_REALES_20260728_103151.zip

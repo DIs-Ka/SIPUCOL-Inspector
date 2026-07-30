@@ -1,0 +1,21 @@
+SIPUCOL — NUEVA BASE CANÓNICA
+========================================================================
+
+Fecha: 2026-07-28 11:30:06
+
+Motor activo:
+backend.pdf_final_page_filter_worker
+
+Regla:
+- LibreOffice conserva su calidad y maquetación.
+- Después se eliminan físicamente páginas vacías.
+- El reporte de exportación decide los componentes.
+- identification_written nunca cuenta.
+- CALCULO IC permanece al final.
+- No existe rasterización ni pérdida de calidad.
+
+Backup anterior:
+C:\Users\Admin\OneDrive\Documentos\Zenith\2. Proyectos\2. SIPUCOL Autom\sipucol-inspector\backups\SIPUCOL_BASE_CANONICA_ANTES_FILTRO_FINAL_PAGINAS_PDF_20260728_112947.zip
+
+Backup final:
+C:\Users\Admin\OneDrive\Documentos\Zenith\2. Proyectos\2. SIPUCOL Autom\sipucol-inspector\backups\SIPUCOL_BASE_CANONICA_PDF_FILTRADO_POR_PAGINAS_20260728_112947.zip

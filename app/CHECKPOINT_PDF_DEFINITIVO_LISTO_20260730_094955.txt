@@ -1,0 +1,28 @@
+SIPUCOL — NUEVA BASE CANÓNICA
+========================================================================
+
+Fecha: 2026-07-30 09:50:45
+
+Filtro final:
+- Solo encabezados exactos Componente: nombre.
+- Índice excluido.
+- Nota inicial excluida.
+- Catálogo excluido.
+- Componentes ya filtrados conservados.
+- CALCULO IC siempre al final.
+- CALCULO IC comprimido dividido en 6 páginas.
+- Sin rasterización ni pérdida de calidad.
+
+No modificado:
+- Selección de componentes.
+- Contador UI.
+- Exportador Excel.
+- Motor LibreOffice.
+- Datos y fórmulas.
+- Interfaz.
+
+Backup anterior:
+C:\Users\Admin\OneDrive\Documentos\Zenith\2. Proyectos\2. SIPUCOL Autom\sipucol-inspector\backups\SIPUCOL_BASE_CANONICA_ANTES_FILTRO_PDF_DEFINITIVO_20260730_094955.zip
+
+Backup final:
+C:\Users\Admin\OneDrive\Documentos\Zenith\2. Proyectos\2. SIPUCOL Autom\sipucol-inspector\backups\SIPUCOL_BASE_CANONICA_PDF_DEFINITIVO_LISTO_20260730_094955.zip
