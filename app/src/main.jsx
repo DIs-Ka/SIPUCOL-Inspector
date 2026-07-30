@@ -1,8 +1,9 @@
-
+﻿
 ﻿import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import './style.css'
+import './responsive.css'
 import "./sipucolFinalUi.js";
 import "./photoPanelVisualCleanup.js";
 import "./hideOnlyPhotoSendBar.js";

@@ -1,0 +1,44 @@
+﻿INSPECTOR SIPUCOL — CHECKPOINT BLOQUE 1
+================================================================
+
+Fecha: 2026-07-30 14:32:08
+
+Estado:
+COMPLETADO
+
+Proyecto:
+C:\Users\Admin\Projects\Inspector-Sipucol
+
+Aplicación:
+C:\Users\Admin\Projects\Inspector-Sipucol\app
+
+Cambios:
+- PC conserva tres paneles simultáneos.
+- Tablet usa pestañas Fotos, Evaluación y Códigos.
+- Celular usa pestañas Fotos, Evaluación y Códigos.
+- Los tres paneles permanecen montados.
+- Cambio de pestaña no desmonta los módulos.
+- Navegación mediante teclado agregada.
+- Viewport móvil agregado.
+- Controles adaptados para pantalla táctil.
+- Tabla de Evaluación conserva ancho y scroll horizontal.
+- Visores y modales adaptados.
+- Orientación horizontal de poca altura adaptada.
+
+Preservado:
+- Fotos.
+- Evaluación.
+- Códigos.
+- Autoguardado.
+- Identificación.
+- Excel.
+- PDF.
+- CALCULO IC.
+- Backend.
+- Motor PDF: backend.pdf_clean_final_override
+
+Backup anterior:
+C:\Users\Admin\Projects\Inspector-Sipucol\backups\INSPECTOR_SIPUCOL_ANTES_BLOQUE_1_20260730_143202.zip
+
+Siguiente bloque:
+Bloque 2 — PWA instalable.

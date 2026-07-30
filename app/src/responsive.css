@@ -1,0 +1,569 @@
+﻿/*
+==============================================================
+INSPECTOR SIPUCOL — BLOQUE 1 RESPONSIVE
+==============================================================
+
+Este archivo solo controla:
+
+- distribución PC / tablet / celular;
+- navegación entre paneles;
+- adaptación táctil;
+- tamaño de modales;
+- desplazamiento horizontal seguro.
+
+No modifica:
+
+- datos;
+- autoguardado;
+- componentes;
+- backend;
+- Excel;
+- PDF;
+- fotografías;
+- códigos.
+*/
+
+.inspector-app {
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  background: #020617;
+  color: #e5e7eb;
+  font-family: Arial, sans-serif;
+}
+
+.inspector-layout {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  display: grid;
+  grid-template-columns:
+    minmax(0, 25fr)
+    minmax(0, 47fr)
+    minmax(0, 28fr);
+  overflow: hidden;
+}
+
+.inspector-panel-slot {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.inspector-panel-slot > section {
+  width: 100%;
+  height: 100% !important;
+  min-width: 0;
+  min-height: 0;
+}
+
+.inspector-panel-fotos {
+  border-right: 2px solid #2563eb;
+}
+
+.inspector-panel-evaluacion {
+  border-right: 2px solid #059669;
+}
+
+.inspector-mobile-header,
+.inspector-mobile-tabs {
+  display: none;
+}
+
+/* Mejora el desplazamiento táctil sin cambiar las tablas. */
+.inspector-panel-slot div[style*="overflow"],
+.inspector-panel-slot section[style*="overflow"] {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* La tabla de Evaluación conserva su ancho real. */
+.inspector-panel-evaluacion table {
+  flex-shrink: 0;
+}
+
+/* ==========================================================
+   TABLET Y CELULAR
+   ========================================================== */
+
+@media (max-width: 1180px) {
+  .inspector-app {
+    display: grid;
+    grid-template-rows:
+      auto
+      auto
+      minmax(0, 1fr);
+  }
+
+  .inspector-mobile-header {
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding:
+      max(8px, env(safe-area-inset-top))
+      14px
+      8px;
+    background:
+      linear-gradient(
+        90deg,
+        #071326,
+        #071d19
+      );
+    border-bottom: 1px solid #1e3a5f;
+    box-sizing: border-box;
+  }
+
+  .inspector-mobile-header > div {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .inspector-mobile-header strong {
+    color: #e2e8f0;
+    font-size: 14px;
+    line-height: 1.1;
+  }
+
+  .inspector-mobile-header span {
+    color: #7dd3fc;
+    font-size: 10px;
+  }
+
+  .inspector-mobile-mode {
+    flex-shrink: 0;
+    padding: 5px 9px;
+    border: 1px solid rgba(52, 211, 153, 0.45);
+    border-radius: 999px;
+    background: rgba(6, 95, 70, 0.28);
+    color: #a7f3d0 !important;
+    font-size: 10px !important;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .inspector-mobile-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1px;
+    padding: 0;
+    background: #0f172a;
+    border-bottom: 1px solid #334155;
+  }
+
+  .inspector-mobile-tab {
+    min-width: 0;
+    min-height: 54px;
+    padding: 7px 6px;
+    border: 0;
+    border-bottom: 3px solid transparent;
+    background: #07101f;
+    color: #94a3b8;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    transition:
+      background 140ms ease,
+      color 140ms ease,
+      border-color 140ms ease;
+  }
+
+  .inspector-mobile-tab strong {
+    max-width: 100%;
+    overflow: hidden;
+    color: inherit;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .inspector-mobile-tab span {
+    max-width: 100%;
+    overflow: hidden;
+    color: inherit;
+    font-size: 9px;
+    opacity: 0.74;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .inspector-mobile-tab-fotos.is-active {
+    border-bottom-color: #60a5fa;
+    background: #0c2046;
+    color: #bfdbfe;
+  }
+
+  .inspector-mobile-tab-evaluacion.is-active {
+    border-bottom-color: #34d399;
+    background: #052e24;
+    color: #bbf7d0;
+  }
+
+  .inspector-mobile-tab-codigos.is-active {
+    border-bottom-color: #fbbf24;
+    background: #332304;
+    color: #fde68a;
+  }
+
+  .inspector-mobile-tab:focus-visible {
+    position: relative;
+    z-index: 2;
+    outline: 2px solid #ffffff;
+    outline-offset: -3px;
+  }
+
+  .inspector-layout {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+  }
+
+  .inspector-panel-slot {
+    display: none;
+    width: 100%;
+    height: 100%;
+    border-right: 0;
+  }
+
+  .inspector-panel-slot.is-active {
+    display: block;
+  }
+
+  .inspector-panel-slot.is-active > section {
+    animation: inspector-panel-entry 130ms ease-out;
+  }
+
+  @keyframes inspector-panel-entry {
+    from {
+      opacity: 0.78;
+      transform: translateY(2px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /*
+  El indicador de autoguardado se mantiene visible,
+  pero sin cubrir toda la parte inferior.
+  */
+  #sipucol-autosave-tools {
+    right: 10px !important;
+    bottom:
+      max(
+        10px,
+        env(safe-area-inset-bottom)
+      ) !important;
+    max-width: calc(100vw - 20px);
+  }
+
+  /*
+  Los modales construidos por los módulos actuales
+  aprovechan casi toda la pantalla de tablet.
+  */
+  .inspector-panel-slot div[style*="position: fixed"][style*="inset: 0"] {
+    padding: 10px !important;
+  }
+
+  .inspector-panel-slot div[style*="width: min(980px"] {
+    width: calc(100vw - 20px) !important;
+    height: calc(100dvh - 20px) !important;
+  }
+
+  .inspector-panel-slot div[style*="width: min(1100px"] {
+    width: calc(100vw - 20px) !important;
+    height: calc(100dvh - 20px) !important;
+  }
+}
+
+/* ==========================================================
+   CELULAR
+   ========================================================== */
+
+@media (max-width: 720px) {
+  .inspector-mobile-header {
+    min-height: 42px;
+    padding-left:
+      max(
+        10px,
+        env(safe-area-inset-left)
+      );
+    padding-right:
+      max(
+        10px,
+        env(safe-area-inset-right)
+      );
+  }
+
+  .inspector-mobile-mode {
+    padding: 4px 7px;
+    font-size: 9px !important;
+  }
+
+  .inspector-mobile-tab {
+    min-height: 50px;
+    padding: 6px 3px;
+  }
+
+  .inspector-mobile-tab strong {
+    font-size: 11px;
+  }
+
+  .inspector-mobile-tab span {
+    font-size: 8px;
+  }
+
+  /*
+  Evita que iOS haga zoom automático al enfocar campos.
+  */
+  .inspector-panel-slot input:not([type="range"]),
+  .inspector-panel-slot textarea,
+  .inspector-panel-slot select {
+    font-size: 16px !important;
+  }
+
+  /*
+  Encabezados compactos.
+  */
+  .inspector-panel-fotos h2,
+  .inspector-panel-evaluacion h2,
+  .inspector-panel-codigos h2 {
+    font-size: 22px !important;
+  }
+
+  .inspector-panel-fotos > section > header,
+  .inspector-panel-codigos > section > header {
+    padding: 9px 10px !important;
+  }
+
+  .inspector-panel-fotos > section > header {
+    flex-wrap: wrap !important;
+    align-items: flex-start !important;
+  }
+
+  /*
+  Identificación de Evaluación:
+  las cuadrículas de tres columnas se convierten
+  en una columna únicamente en celular.
+  */
+  .inspector-panel-evaluacion
+  div[style*="grid-template-columns: repeat(3"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /*
+  Observaciones y cajas dobles pasan a una columna.
+  */
+  .inspector-panel-evaluacion
+  div[style*="grid-template-columns: 1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /*
+  La página nueva de Identificación deja de exigir 720 px.
+  */
+  .inspector-panel-evaluacion
+  div[style*="width: 720px"] {
+    width: 100% !important;
+    min-width: 100% !important;
+    flex-basis: 100% !important;
+  }
+
+  /*
+  El buscador de daños ocupa toda la línea.
+  */
+  .inspector-panel-evaluacion
+  input[placeholder="Buscar código o daño..."] {
+    width: 100% !important;
+  }
+
+  .inspector-panel-evaluacion
+  input[placeholder="Buscar código o daño..."]
+  {
+    min-width: 0 !important;
+  }
+
+  /*
+  Botones de severidad más cómodos táctilmente.
+  La tabla conserva desplazamiento horizontal.
+  */
+  .inspector-panel-evaluacion
+  div[style*="grid-template-columns: repeat(6, 22px)"] {
+    grid-template-columns:
+      repeat(6, 34px) !important;
+    gap: 5px !important;
+  }
+
+  .inspector-panel-evaluacion
+  div[style*="grid-template-columns: repeat(6, 22px)"]
+  > button {
+    min-height: 34px !important;
+  }
+
+  /*
+  Scroll suave de la tabla y de componentes.
+  */
+  .inspector-panel-evaluacion
+  div[style*="overflow-x: auto"],
+  .inspector-panel-evaluacion
+  div[style*="overflow-y: scroll"] {
+    overscroll-behavior: contain;
+    touch-action: pan-x pan-y;
+  }
+
+  /*
+  El panel de códigos conserva lista y detalle,
+  pero reparte mejor la altura en celular.
+  */
+  .inspector-panel-codigos
+  div[style*="grid-template-rows: 42% 58%"] {
+    grid-template-rows: 46% 54% !important;
+  }
+
+  /*
+  Modal de fotos React.
+  */
+  .inspector-panel-fotos
+  > section
+  > div[style*="position: fixed"] {
+    padding: 4px !important;
+  }
+
+  .inspector-panel-fotos
+  > section
+  > div[style*="position: fixed"]
+  > div {
+    width: calc(100vw - 8px) !important;
+    height: calc(100dvh - 8px) !important;
+    border-radius: 8px !important;
+  }
+
+  /*
+  Visor adicional generado por sipucolFinalUi.
+  */
+  #sipucol-photo-viewer-final {
+    grid-template-rows:
+      auto
+      minmax(0, 1fr) !important;
+  }
+
+  #sipucol-photo-viewer-final > header {
+    min-height: 0 !important;
+    flex-wrap: wrap;
+    padding:
+      max(7px, env(safe-area-inset-top))
+      8px
+      7px !important;
+  }
+
+  #sipucol-photo-viewer-final
+  [data-role="resolution"] {
+    min-width: 80px;
+  }
+
+  #sipucol-photo-viewer-final
+  > header
+  input[type="range"] {
+    width: 90px !important;
+  }
+
+  #sipucol-photo-viewer-final
+  > header
+  button {
+    min-width: 38px;
+    height: 38px !important;
+    padding: 0 8px !important;
+  }
+
+  /*
+  Autoguardado compacto.
+  */
+  #sipucol-autosave-tools {
+    left: 8px !important;
+    right: 8px !important;
+    width: auto !important;
+    justify-content: space-between;
+  }
+
+  .sipucol-autosave-label {
+    min-width: 0;
+    overflow: hidden;
+    font-size: 10px !important;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .sipucol-clear-all {
+    flex-shrink: 0;
+  }
+}
+
+/* ==========================================================
+   CELULAR MUY ESTRECHO
+   ========================================================== */
+
+@media (max-width: 390px) {
+  .inspector-mobile-header span:not(.inspector-mobile-mode) {
+    display: none;
+  }
+
+  .inspector-mobile-tab span {
+    display: none;
+  }
+
+  .inspector-mobile-tab {
+    min-height: 44px;
+  }
+
+  .inspector-panel-fotos h2,
+  .inspector-panel-evaluacion h2,
+  .inspector-panel-codigos h2 {
+    font-size: 19px !important;
+  }
+}
+
+/* ==========================================================
+   CELULAR O TABLET EN HORIZONTAL CON POCA ALTURA
+   ========================================================== */
+
+@media (max-width: 1180px) and (max-height: 600px) {
+  .inspector-mobile-header {
+    display: none;
+  }
+
+  .inspector-mobile-tab {
+    min-height: 42px;
+    padding: 4px;
+  }
+
+  .inspector-mobile-tab span {
+    display: none;
+  }
+}
+
+/* Respeto por usuarios que desactivan animaciones. */
+@media (prefers-reduced-motion: reduce) {
+  .inspector-panel-slot.is-active > section {
+    animation: none;
+  }
+
+  .inspector-mobile-tab {
+    transition: none;
+  }
+}
