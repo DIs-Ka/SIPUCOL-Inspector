@@ -1,0 +1,39 @@
+INSPECTOR SIPUCOL — CHECKPOINT BLOQUE 2
+================================================================
+
+Fecha:
+2026-07-30 16:14:10
+
+Estado:
+COMPLETADO
+
+Implementado:
+- Manifest PWA.
+- Service Worker.
+- Aplicación instalable.
+- Iconos PWA.
+- Interfaz disponible sin conexión.
+- Aviso de instalación.
+- Aviso antes de actualizar.
+- Avisos de conexión.
+- Lanzador de prueba local en puerto 4173.
+
+Validaciones:
+- Frontend compilado.
+- Manifest generado.
+- Service Worker generado.
+- App instalable.
+- App.jsx preservado.
+- Responsive preservado.
+- Backend no modificado.
+- Motores PDF preservados por SHA256.
+
+Importante:
+El almacenamiento estructurado offline se implementará
+en el Bloque 3 con IndexedDB.
+
+Backup previo:
+C:\Users\Admin\Projects\Inspector-Sipucol\backups\INSPECTOR_SIPUCOL_ANTES_BLOQUE_2_20260730_161302.zip
+
+Siguiente:
+Bloque 3 — IndexedDB local.

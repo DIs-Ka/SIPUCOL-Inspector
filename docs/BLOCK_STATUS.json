@@ -1,15 +1,17 @@
-﻿{
+{
     "product":  "Inspector Sipucol",
-    "block":  1,
-    "blockName":  "Interfaz responsive",
+    "block":  2,
+    "blockName":  "PWA instalable",
     "status":  "completed",
-    "completedAt":  "2026-07-30T14:32:08",
+    "completedAt":  "2026-07-30T16:14:10",
     "projectRoot":  "C:\\Users\\Admin\\Projects\\Inspector-Sipucol",
     "appRoot":  "C:\\Users\\Admin\\Projects\\Inspector-Sipucol\\app",
-    "desktopLayout":  "Tres paneles simultáneos",
-    "tabletLayout":  "Pestañas con panel persistente",
-    "mobileLayout":  "Pestañas con panel persistente",
+    "pwaPlugin":  "vite-plugin-pwa 1.3.0",
+    "installable":  true,
+    "offlineAppShell":  true,
+    "offlineDataStorage":  false,
+    "backendModified":  false,
     "activePdfModule":  "backend.pdf_clean_final_override",
-    "nextBlock":  2,
-    "nextBlockName":  "PWA instalable"
+    "nextBlock":  3,
+    "nextBlockName":  "IndexedDB local"
 }

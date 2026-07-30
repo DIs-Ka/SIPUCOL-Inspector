@@ -1,0 +1,77 @@
+#inspector-pwa-notice {
+  position: fixed;
+  left: 14px;
+  bottom: 14px;
+  z-index: 2147482500;
+  width: min(410px, calc(100vw - 28px));
+  padding: 13px;
+  border: 1px solid rgba(52, 211, 153, 0.5);
+  border-radius: 13px;
+  background: rgba(3, 24, 18, 0.97);
+  color: #d1fae5;
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(14px);
+  box-sizing: border-box;
+}
+
+#inspector-pwa-notice[hidden] {
+  display: none !important;
+}
+
+.inspector-pwa-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.inspector-pwa-copy strong {
+  color: #6ee7b7;
+  font-size: 13px;
+}
+
+.inspector-pwa-copy span {
+  color: #d1fae5;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.inspector-pwa-actions {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 11px;
+}
+
+.inspector-pwa-actions button {
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1px solid #047857;
+  border-radius: 8px;
+  background: #064e3b;
+  color: #ecfdf5;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.inspector-pwa-actions
+button[data-action="primary"] {
+  border-color: #34d399;
+  background: #059669;
+  color: #ffffff;
+}
+
+@media (max-width: 720px) {
+  #inspector-pwa-notice {
+    left: 8px;
+    right: 8px;
+    bottom: 62px;
+    width: auto;
+  }
+
+  .inspector-pwa-actions button {
+    min-height: 42px;
+    font-size: 12px;
+  }
+}
