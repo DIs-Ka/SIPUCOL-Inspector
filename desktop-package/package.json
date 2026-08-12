@@ -1,0 +1,14 @@
+{
+    "name":  "inspector-sipucol-desktop",
+    "description":  "Inspector Sipucol para Windows",
+    "author":  "Inspector Sipucol",
+    "license":  "UNLICENSED",
+    "private":  true,
+    "devDependencies":  {
+                            "electron":  "^43.2.0",
+                            "electron-builder":  "^26.15.3"
+                        },
+    "version":  "1.0.1",
+    "main":  "main.final.cjs",
+    "productName":  "Inspector Sipucol"
+}

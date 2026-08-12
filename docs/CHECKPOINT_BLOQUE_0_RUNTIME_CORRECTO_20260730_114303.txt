@@ -1,0 +1,31 @@
+﻿INSPECTOR SIPUCOL - CHECKPOINT BLOQUE 0 DEFINITIVO
+====================================================================
+
+Fecha: 2026-07-30 11:43:10
+
+Estado: APROBADO
+
+Proyecto oficial preservado:
+C:\Users\Admin\OneDrive\Documentos\Zenith\2. Proyectos\2. SIPUCOL Autom\sipucol-inspector
+
+Inspector Sipucol:
+C:\Users\Admin\Projects\Inspector-Sipucol
+
+Aplicación activa:
+C:\Users\Admin\Projects\Inspector-Sipucol\app
+
+Corrección:
+- Launcher sin rutas fijas.
+- La ejecución apunta a Inspector-Sipucol\app.
+- El proyecto oficial no se ejecuta desde el launcher nuevo.
+- Motor PDF oficial preservado.
+- Frontend y backend preservados.
+
+Backup:
+C:\Users\Admin\Projects\Inspector-Sipucol\backups\INSPECTOR_SIPUCOL_BLOQUE_0_RUNTIME_CORRECTO_20260730_114303.zip
+
+SHA-256:
+37ccb36b901678c449fa2e01ebf3b93e7a17854395079d73f20e65e61e853c1f
+
+Siguiente bloque:
+Bloque 1 - Interfaz responsive para PC, tablet y celular.

@@ -1,0 +1,59 @@
+INSPECTOR SIPUCOL 1.0.1
+ENTREGA FINAL
+============================================================
+
+Fecha:
+2026-08-10 12:05:46
+
+Estado:
+APROBADO
+
+Aplicación:
+OK
+
+Backend:
+OK
+
+Plantilla:
+OK
+
+Excel:
+OK
+
+PDF:
+OK
+
+LibreOffice integrado:
+OK
+
+PDF offline de prueba:
+OK
+
+Logo:
+OK
+
+Tracker:
+642 filas
+27 hojas
+
+Instalador:
+C:\Users\Admin\Projects\Inspector-Sipucol\ENTREGA_COLABORADORES\Inspector-Sipucol-1.0.1-FINAL\01_Instalador\Inspector-Sipucol-Setup-1.0.1.exe
+
+Portable:
+C:\Users\Admin\Projects\Inspector-Sipucol\ENTREGA_COLABORADORES\Inspector-Sipucol-1.0.1-FINAL\02_Portable\Inspector-Sipucol-Portable-1.0.1.exe
+
+Entrega:
+C:\Users\Admin\Projects\Inspector-Sipucol\ENTREGA_COLABORADORES\Inspector-Sipucol-1.0.1-FINAL
+
+README usuarios:
+C:\Users\Admin\Projects\Inspector-Sipucol\ENTREGA_COLABORADORES\Inspector-Sipucol-1.0.1-FINAL\03_Documentacion\README_USUARIOS.md
+
+README desarrollo:
+C:\Users\Admin\Projects\Inspector-Sipucol\ENTREGA_COLABORADORES\Inspector-Sipucol-1.0.1-FINAL\03_Documentacion\README_DESARROLLO.md
+
+Nota:
+El ZIP de carpeta portable fue omitido deliberadamente para evitar
+otra copia completa de LibreOffice y solucionar la falta de espacio.
+
+El portable de un solo EXE sí está incluido y es la opción portable
+oficial de esta entrega.

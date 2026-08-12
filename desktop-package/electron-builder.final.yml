@@ -1,0 +1,54 @@
+appId: com.sipucol.inspector.desktop
+productName: Inspector Sipucol
+
+directories:
+  output: release-final
+  buildResources: build
+
+files:
+  - main.final.cjs
+  - package.json
+  - dist-desktop/**/*
+
+extraResources:
+  - from: ../desktop-clean-build/dist/InspectorSipucolBackend
+    to: backend-runtime
+    filter:
+      - "**/*"
+
+  - from: vendor/LibreOffice
+    to: libreoffice
+    filter:
+      - "**/*"
+
+  - from: build/inspector-sipucol-final.ico
+    to: app-icon.ico
+
+asar: true
+compression: normal
+
+win:
+  executableName: Inspector Sipucol
+  icon: build/inspector-sipucol-final.ico
+
+  target:
+    - target: nsis
+      arch:
+        - x64
+
+    - target: portable
+      arch:
+        - x64
+
+nsis:
+  oneClick: true
+  perMachine: false
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  runAfterFinish: false
+  shortcutName: Inspector Sipucol
+  artifactName: Inspector-Sipucol-Setup-${version}.${ext}
+
+portable:
+  artifactName: Inspector-Sipucol-Portable-${version}.${ext}
+  requestExecutionLevel: user

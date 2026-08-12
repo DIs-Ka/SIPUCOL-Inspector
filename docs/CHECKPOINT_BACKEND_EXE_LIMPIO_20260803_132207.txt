@@ -1,0 +1,28 @@
+INSPECTOR SIPUCOL - BACKEND EXE LIMPIO
+============================================================
+
+Fecha:
+2026-08-03 13:25:10
+
+Estado:
+APROBADO
+
+Ejecutable:
+C:\Users\Admin\Projects\Inspector-Sipucol\desktop-clean-build\dist\InspectorSipucolBackend\InspectorSipucolBackend.exe
+
+SHA256:
+970a51a9d0fecc5f84e6060e5c559e835e4a79b17f025da09f707591bd7299e3
+
+Verificado:
+- Backend inicia sin Python global.
+- OpenAPI responde.
+- Ruta Guardar Excel presente.
+- Ruta Guardar PDF presente.
+- Motor PDF preservado.
+- Fuentes canónicas sin modificar.
+
+Entorno:
+C:\Users\Admin\Projects\Inspector-Sipucol\.venv-desktop-clean
+
+Backup previo:
+C:\Users\Admin\Projects\Inspector-Sipucol\backups\INSPECTOR_SIPUCOL_ANTES_BACKEND_EXE_LIMPIO_20260803_132207.zip

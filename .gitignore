@@ -1,15 +1,91 @@
-app/node_modules/
-app/dist/
-**/__pycache__/
-*.pyc
+# ============================================================
+# Inspector Sipucol
+# Git principal: codigo fuente y configuracion reproducible
+# ============================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Entornos Python locales
 .venv/
-venv/
-**/.vite/
-.sipucol_runtime/
+.venv-*/
+**/.venv/
+**/.venv-*/
+
+# Node
+node_modules/
+**/node_modules/
+.npm/
+.yarn/
+.pnpm-store/
+
+# Vite / renderer generado
+app/dist/
+app/.desktop-renderer/
+desktop-package/dist-desktop/
+
+# Electron / paquetes generados
+desktop-package/release/
+desktop-package/release-final/
+desktop-package/vendor/
+
+# PyInstaller generado
+desktop-clean-build/build/
+desktop-clean-build/dist/
+desktop-clean-stage/
+
+# Entregas binarias
+ENTREGA_COLABORADORES/
+
+# Backups fisicos
+# Se publicaran en ramas backup/archive mediante Git LFS
 backups/
-*.log
+
+# Temporales
 *.tmp
+*.temp
+*.log
+*.bak
+*.bak_*
+*.old
+*.orig
+*.swp
+*.swo
+~$*
+
+# Runtime local
+runtime/
+temp/
+tmp/
+
+# Secretos / configuracion local
 .env
-.env.local
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Windows
 Thumbs.db
-desktop.ini
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Logs Electron/backend
+backend-startup.log
+
+# Cobertura
+coverage/
+htmlcov/
+.coverage
+# PyInstaller work temporal
+desktop-clean-build/work/
