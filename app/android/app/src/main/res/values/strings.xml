@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Inspector Sipucol Field</string>
+    <string name="title_activity_main">Inspector Sipucol Field</string>
+    <string name="package_name">co.sipucol.inspector.field</string>
+    <string name="custom_url_scheme">co.sipucol.inspector.field</string>
+</resources>

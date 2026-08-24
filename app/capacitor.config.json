@@ -1,0 +1,15 @@
+{
+  "appId": "co.sipucol.inspector.field",
+  "appName": "Inspector Sipucol Field",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "CapacitorSQLite": {
+      "iosDatabaseLocation": "Library/CapacitorDatabase",
+      "iosIsEncryption": false,
+      "androidIsEncryption": false
+    }
+  }
+}
