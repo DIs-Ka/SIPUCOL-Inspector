@@ -1,3 +1,4 @@
+import "./mobile/fieldNativeDiagnostics.js";
 import "./mobile/fieldRuntime.js";
 import React from 'react'
 import ReactDOM from 'react-dom/client'
