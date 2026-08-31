@@ -778,13 +778,15 @@ function findReferenceButton(
 
   const priorities = [
 
-    "cargar proyecto",
+    "guardar pdf",
 
-    "guardar proyecto",
+    "generar pdf",
 
     "guardar excel",
 
-    "guardar pdf"
+    "cargar proyecto",
+
+    "guardar proyecto"
   ]
 
 
@@ -891,9 +893,22 @@ function installButton() {
   )
 
 
-  toolbar.appendChild(
-    button
-  )
+  if (
+    reference &&
+    reference.parentElement === toolbar
+  ) {
+
+    reference.insertAdjacentElement(
+      "afterend",
+      button
+    )
+
+  } else {
+
+    toolbar.appendChild(
+      button
+    )
+  }
 
 
   return true

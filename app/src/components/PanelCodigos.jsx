@@ -1,4 +1,4 @@
-﻿import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { areasCodigos, codigosSIPUCOL } from '../data/codigosSIPUCOL'
 
 const coloresArea = {
@@ -32,10 +32,17 @@ export default function PanelCodigos({ onUsarCodigo }) {
 
   const modalScrollRef = useRef(null)
 
-  const imagenActual =
+  const imagenActualFuente =
     codigoSeleccionado?.imagenCodigo ||
     codigoSeleccionado?.imagenPagina ||
     ''
+
+  const imagenActual = imagenActualFuente
+    ? new URL(
+        String(imagenActualFuente).replace(/^\/+/, ''),
+        window.location.href
+      ).href
+    : ''
 
   const conteoPorArea = useMemo(() => {
     return codigosSIPUCOL.reduce((acc, item) => {
@@ -80,7 +87,7 @@ export default function PanelCodigos({ onUsarCodigo }) {
   async function copiarCodigo() {
     if (!codigoSeleccionado) return
 
-    const texto = `${codigoSeleccionado.codigo} - ${codigoSeleccionado.nombre}`
+    const texto = String(codigoSeleccionado.codigo || '').trim()
 
     try {
       await navigator.clipboard.writeText(texto)
@@ -94,10 +101,31 @@ export default function PanelCodigos({ onUsarCodigo }) {
   function abrirPaginaPDF() {
     if (!codigoSeleccionado || !imagenActual) return
 
-    const url =
-      `/catalogo-viewer.html?img=${encodeURIComponent(imagenActual)}&codigo=${encodeURIComponent(codigoSeleccionado.codigo)}&page=${codigoSeleccionado.pagina || 1}`
+    const url = new URL(
+      'catalogo-viewer.html',
+      window.location.href
+    )
 
-    window.open(url, '_blank', 'noopener,noreferrer')
+    url.searchParams.set(
+      'img',
+      imagenActual
+    )
+
+    url.searchParams.set(
+      'codigo',
+      String(codigoSeleccionado.codigo || '')
+    )
+
+    url.searchParams.set(
+      'page',
+      String(codigoSeleccionado.pagina || 1)
+    )
+
+    window.open(
+      url.href,
+      '_blank',
+      'noopener,noreferrer'
+    )
   }
 
   function abrirImagenGrande() {
